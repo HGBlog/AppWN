@@ -1,0 +1,32 @@
+//- EXEMPLO DE SLIDE BOOTSTRAP APENAS PARA DEMONSTRAÇÃO
+
+section.jumbotron.WidthFull(style="width: 100%;")
+	#carousel-example-generic.carousel.slide(data-ride="carousel")
+		//- Indicators
+		ol.carousel-indicators
+			li.active(data-target="#carousel-example-generic", data-slide-to="0")
+			li(data-target="#carousel-example-generic", data-slide-to="1")
+			li(data-target="#carousel-example-generic", data-slide-to="2")
+		//- Wrapper for slides
+		.carousel-inner(role="listbox")
+			.item.active
+				img.img-responsive(src="assets/imagens/slide/ex-slide-1.jpg", alt="Exemplo Slide 1")
+				.carousel-caption
+					| Exemplo Slide 1
+			.item
+				img.img-responsive(src="assets/imagens/slide/ex-slide-2.jpg", alt="Exemplo Slide 2")
+				.carousel-caption
+					| Exemplo Slide 2
+			.item
+				img.img-responsive(src="assets/imagens/slide/ex-slide-3.jpg", alt="Exemplo Slide 3")
+				.carousel-caption
+					| Exemplo Slide 3
+		//- Controls
+		a.left.carousel-control(href="#carousel-example-generic", role="button", data-slide="prev")
+			span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+			span.sr-only
+				| Previous
+		a.right.carousel-control(href="#carousel-example-generic", role="button", data-slide="next")
+			span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+			span.sr-only
+				| Next

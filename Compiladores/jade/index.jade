@@ -1,0 +1,16 @@
+//- ESTRUTURA GERAL DA PÁGINA ↓
+extends Estrutura/default
+
+block variables
+	- bodyClass = "BodyAzul"
+	//- FUNÇÃO QUE CARREGA REDIRECT DA PÁGINA PARA DEMONSTRAÇÃO EM PROTÓTIPO
+	- jqueryDaPag = "LoadingPage()"
+
+//- TÍTULO DA PÁGINA ↓
+block title
+	| Bem-vindo ao Wellness
+
+//- ARQUIVOS DENTRO DO BODY DA PÁGINA ↓
+block content
+	section.LoadingPage
+		include ParteFixa/PgCarregamento

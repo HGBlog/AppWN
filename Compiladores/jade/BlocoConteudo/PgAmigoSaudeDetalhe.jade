@@ -1,0 +1,26 @@
+//- CONTEÚDO GERAL DA PÁGINA DE DETALHES DO USUÁRIO AMIGO DA SAÚDE
+article.row.ContentAmigosSaude
+	.col-xs-12.col-md-offset-3.col-md-6.col-md-offset-3
+		
+		// DETALHE DO USUÁRIO
+		.thumbnail.AmigosDetalhes
+			a.AddAmigos(href="#" title="Adicionar ou remove-lo da lista de amigos")
+				i.fa.fa-user-plus(aria-hidden="true")
+			.ImagemUsuario
+				img.img-circle.img-responsive(src="assets/imagens/Usuarios/Example-User.jpg" alt="Imagem de Usuario")
+			.caption
+				h2 Nome da Pessoa
+				p
+					strong
+						| Indicado Por 
+					a(href="AmigoSaudeDetalhe.html" title="Ir Para a Página de Nome da Pessoa") Nome da Pessoa
+				p
+					Membro desde 00/00/0000
+			.footerThumb.row				
+				.col-xs-12					
+					button.btn.btn-primary.btn-lg.btn-block(type="button") Indicações
+				.col-xs-12
+					button.btn.btn-primary.btn-lg.btn-block(type="button") Histórico
+				.col-xs-12.col-last
+					button.btn.btn-primary.btn-lg.btn-block(type="button") Interesse
+				.clearfix

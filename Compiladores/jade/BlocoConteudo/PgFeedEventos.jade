@@ -1,0 +1,62 @@
+//- CONTEÚDO GERAL DA PÁGINA DE FEED DE EVENTOS
+a.LinkPreviousFeed(href="FeedNoticias.html" title="Voltar para Feed de Notícias")
+	i.fa.fa-angle-double-up(aria-hidden="true")
+	span Próxima Página
+
+article.row.ContentFeed
+	.col-xs-12.col-md-offset-3.col-md-6.col-md-offset-3
+		
+		// FEED DE EVENTOS
+		.thumbnail.Evento
+			.ImagemDestaque(style="background-image: url('assets/imagens/Feed/Fundo-Evento.jpg')")
+				.backdrop
+				.DataEvento
+					span.num
+						| 00
+					span.let
+						| Mês
+				.InfEvento
+					h2
+						| Nome do Evento
+					span
+						i.fa.fa-history(aria-hidden="true")
+						| 00:00 - 00:00
+					span
+						i.fa.fa-map-marker(aria-hidden="true")
+						| Exemplo de Local
+					span
+						i.fa.fa-briefcase(aria-hidden="true")
+						| Organização: Exemplo Organização
+			.caption
+				h4 Descrição: 
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo porttitor est, sit amet facilisis lorem luctus vitae. Nam dignissim luctus orci, a convallis leo fermentum vel. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas non diam quis mi dictum viverra eget id ligula.
+			.footerThumb.row				
+				.col-xs-12
+					.form-group.inputCheckboxAzul
+						.checkbox-item
+							label.checkbox-inline.checkbox(for="ckeckAddAgenda")
+								input#ckeckAddAgenda(type="checkbox" name="checkAgenda" value="1")
+								span Adicionar à minha agenda
+
+		.thumbnail.Quiz
+			.media
+				.media-left.media-top
+					i.fa.fa-question(aria-hidden="true")
+				.media-body
+					h4.media-heading
+						| Queremos saber mais sobre sua saúde
+			.caption
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+			.footerThumb.row				
+				.col-xs-12
+					button.btn.btn-primary.btn-lg.btn-block(type="button" onClick="location.href='QuestionarioVidaSaudavel.html'") Responder Este Quiz
+					.clearfix
+
+					
+
+a.LinkNextFeed(href="FeedAnuncio.html" title="Avançar para Feed de Anuncio")
+	i.fa.fa-angle-double-down(aria-hidden="true")
+	span Próxima Página
+

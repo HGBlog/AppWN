@@ -1,0 +1,38 @@
+//- CONTEÚDO GERAL DA PÁGINA DE NOVO PERFIL
+
+.form-group.inputRadioAzul
+	label
+		| Você está contente com o seu peso?
+	.clearfix
+	.radio-item
+		input#RadioSim.form-control(type="radio", name="ContentePeso", value="1" checked="checked")
+		label.radio-inline(for="RadioSim") 
+			| &nbsp;&nbsp; Sim
+	.radio-item
+		input#RadioNao.form-control(type="radio", name="ContentePeso", value="2")
+		label.radio-inline(for="RadioNao")		
+			| &nbsp;&nbsp; Não
+.form-group
+	label(for="txtKilosTem")
+		| Quantos kilos você pesa?
+	input#txtKilosTem.form-control.widthCampo120(type="number", min="1" max="400")
+
+.form-group
+	label(for="txtKilosGostaria")
+		| Quantos kilos você gostaria de pesar?
+	input#txtKilosGostaria.form-control.widthCampo120(type="number", min="1" max="400")
+
+.form-group
+	label(for="selRefeicao")
+		| Qual é a sua melhor refeição?
+	select#selRefeicao.form-control
+		option(value="0")
+			| Selecionar
+br
+.form-group
+	button.btn.btn-lg.btn-default.btn-block.btnLoading(type="button" data-loading-text="Carregando..." autocomplete="off" onclick="location.href = 'QuestionarioVidaSaudavelPart2.html'")
+		| Continuar &nbsp; 
+		i.fa.fa-angle-double-right
+.form-group
+	button.btn.btn-lg.btn-primary.btn-block.btnLoading(type="button" data-loading-text="Carregando..." autocomplete="off" onclick="location.href = 'FeedNoticias.html'")
+		| Pular 

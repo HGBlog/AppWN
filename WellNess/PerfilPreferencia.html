@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta name="author" content="">
+    <meta name="MSSmartTagsPreventParsing" content="true">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="robots" content="all">
+    <meta name="robots" content="index,follow">
+    <meta name="DC.title" content="">
+    <meta name="copyright" content="">
+    <meta http-equiv="Content-Language" content="pt-BR">
+    <meta name="target_country" content="br">
+    <meta name="country" content="Brazil">
+    <meta name="Revisit-After" content="5 Days">
+    <meta name="resource-type" content="document">
+    <meta name="classification" content="Internet">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta name="doc-class" content="Completed">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="theme-color" content="#ffffff">
+    <title>Informações de perfil e preferência</title>
+    <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="assets/css/lib/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/StiloPadrao.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/imagens/icon/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <form>
+      <div class="container-fluid">
+        <div class="row">
+          <header class="navbar navbar-default navbar-fixed-top">
+            <nav>		
+              <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <div class="navbar-header navbar-left"><a href="#" title="Voltar" class="Voltar"><i aria-hidden="true" class="fa fa-arrow-left"></i></a></div>
+                <div class="navbar-header navbar-center">
+                  <div class="navTituloh1">
+                    <h1>Perfil e Preferência</h1>
+                  </div>
+                </div>
+                <div class="navbar-header navbar-right"><a href="PerfilPreferencia.html" title="Informações de Login" class="Log"><i aria-hidden="true" class="fa fa-user-circle-o"></i></a>
+                </div>
+              </div>
+            </nav>
+          </header>
+          <div class="clearfix LimiteTopMargin">				</div>
+          <section class="col-xs-12 col-md-10 col-md-offset-1 MarginContent">
+            <div class="form-group">
+              <label for="txtNome" class="sr-only">Nome Completo</label>
+              <input id="txtNome" type="text" placeholder="Nome Completo" class="form-control">
+            </div><br>
+            <div class="form-group inputRadioAzul">
+              <div class="radio-item">
+                <input id="RadioMasc" type="radio" name="EscSexo" value="1" checked="checked" class="form-control">
+                <label for="RadioMasc" class="radio-inline">
+                   
+                  &nbsp;&nbsp; Masculino
+                </label>
+              </div>
+              <div class="radio-item">
+                <input id="RadioFem" type="radio" name="EscSexo" value="2" class="form-control">
+                <label for="RadioFem" class="radio-inline">
+                  		
+                  &nbsp;&nbsp; Feminino
+                </label>
+              </div>
+            </div><br>
+            <div class="form-group">
+              <label for="txtEmail" class="sr-only">E-mail</label>
+              <input id="txtEmail" type="text" placeholder="E-mail" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="txtSenha" class="sr-only">Senha</label>
+              <input id="txtSenha" type="password" placeholder="Senha" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="txtConfSenha" class="sr-only">Confirmar Senha</label>
+              <input id="txtConfSenha" type="password" placeholder="Confirmar Senha" class="form-control">
+            </div><br><br>
+            <div class="form-group">
+              <label for="txtCodigo">Informe o Grupo<small class="linkInfo"> <a data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." class="popGrupo">O que é isso?</a></small></label>
+              <input id="txtCodigo" type="text" value="ABC01J" class="form-control CodGrupo">
+            </div><br>
+            <div class="form-group">
+              <button type="button" data-loading-text="Carregando..." autocomplete="off" onClick="location.href='QuestionarioVidaSaudavel.html'" class="btn btn-lg btn-primary btn-block btnLoading">Confirmar</button>
+            </div>
+            <div class="clearfix"></div>
+          </section>
+          <footer class="navbar navbar-default navbar-fixed-bottom">
+            <nav>
+              <ul class="nav nav-pills nav-justified">
+                <li role="presentation"><a href="FeedNoticias.html" title="Página Inicial"><i aria-hidden="true" class="fa fa-home"></i><span>Página Inicial</span></a></li>
+                <li role="presentation"><a href="AmigoSaude.html" title="Amigos da Saúde"><i aria-hidden="true" class="fa fa-users"></i><span>Amigos da Saúde</span></a></li>
+                <li role="presentation"><a href="Forum.html" title="Fórum da Vida Saudável"><i aria-hidden="true" class="fa fa-comments-o"></i><span>Fórum da Vida Saudável</span></a></li>
+                <li role="presentation"><a href="PerfilPreferencia.html" title="Perfil e Preferências"><i aria-hidden="true" class="fa fa-cog"></i><span>Perfil e Preferências</span></a></li>
+              </ul>
+            </nav>
+          </footer>
+        </div>
+      </div>
+    </form>
+  </body>
+  <!-- TODOS OS MODAIS-->
+  <script src="assets/js/lib/jquery-3.1.1.min.js"> </script>
+  <script src="assets/js/lib/bootstrap.min.js"></script>
+  <script src="assets/js/ScriptPadrao.js"></script>
+  <script></script>
+</html>

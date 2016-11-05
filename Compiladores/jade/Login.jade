@@ -1,0 +1,17 @@
+//- ESTRUTURA GERAL DA PÁGINA ↓
+extends Estrutura/default
+
+block variables
+	- bodyClass = "BodyAzul"
+	//- VARIAÇÃO QUE CARREGA FUNÇÕES EM JQUERY
+	- jqueryDaPag = ""
+
+//- TÍTULO DA PÁGINA ↓
+block title
+	| Faça seu Login
+
+//- ARQUIVOS DENTRO DO BODY DA PÁGINA ↓
+block content
+	form
+		section.ContainerLogin
+			include ParteFixa/PgLogin

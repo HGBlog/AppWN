@@ -1,0 +1,30 @@
+.modal.fade#ModalAnuncio(tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+  .modal-dialog(role="document")
+    .modal-content
+      .modal-header
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+          i.fa.fa-times(aria-hidden="true")
+        h4.modal-title#myModalLabel
+          | Quero Comprar
+
+      .modal-body
+        .row
+          .col-xs-12
+            .thumbnail
+              .caption
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus est id odio luctus posuere. Aenean nibh ligula, dapibus non molestie eget, aliquam sit amet leo.
+              .imgCaption                
+                img.img-responsive(src="assets/imagens/Feed/Produtos/Exemplo-Anuncio.jpg" alt="Imagem do produto")
+                .well
+                  p
+                    | R$ 999,99
+              .caption.alertP
+                h3
+                  | Por favor, aguarde!
+                p
+                  | Um consultor entrará em contato com você.
+
+      .modal-footer
+        button.btn.btn-default.btn-lg.btn-block(type="button" data-dismiss="modal")
+          | Confirmar

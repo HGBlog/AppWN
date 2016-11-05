@@ -1,0 +1,39 @@
+//- CONTEÚDO GERAL DA PÁGINA DE NOVO PERFIL
+
+.form-group.inputCheckboxAzul
+	.checkbox-item
+		label.checkbox-inline.checkbox(for="ckeckComidaCarne")
+			input#ckeckComidaCarne(type="checkbox" name="checkcomida" value="1")
+			span Carnes
+	.checkbox-item
+		label.checkbox-inline.checkbox(for="ckeckComidaMassas")
+			input#ckeckComidaMassas(type="checkbox" name="checkcomida" value="2")
+			span Massas
+	.checkbox-item
+		label.checkbox-inline.checkbox(for="ckeckComidaSaladas")
+			input#ckeckComidaSaladas(type="checkbox" name="checkcomida" value="3")
+			span Saladas
+	.checkbox-item
+		label.checkbox-inline.checkbox(for="ckeckComidaDoces")
+			input#ckeckComidaDoces(type="checkbox" name="checkcomida" value="4")
+			span Doces
+	.checkbox-item
+		label.checkbox-inline.checkbox(for="ckeckComidaFrutas")
+			input#ckeckComidaFrutas(type="checkbox" name="checkcomida" value="5")
+			span Frutas
+	.checkbox-item
+		label.checkbox-inline.checkbox(for="ckeckComidaLanches")
+			input#ckeckComidaLanches(type="checkbox" name="checkcomida" value="6")
+			span Lanches
+br
+.form-group.textareaMensApp
+	label(for="textMgsOpnApp")
+		| O que você mais espera deste Aplicativo?
+	textarea#textMgsOpnApp.form-control(rows="5", placeholder="Escreva sua mensagem")
+br
+.form-group
+	button.btn.btn-lg.btn-default.btn-block.btnLoading(type="button" data-loading-text="Carregando..." autocomplete="off" onclick="location.href = 'FeedNoticias.html'")
+		| Finalizar
+.form-group
+	button.btn.btn-lg.btn-primary.btn-block.btnLoading(type="button" data-loading-text="Carregando..." autocomplete="off" onclick="location.href = 'FeedNoticias.html'")
+		| Pular

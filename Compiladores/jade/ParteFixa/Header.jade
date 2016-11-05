@@ -1,0 +1,14 @@
+//- HEADER DE NAVEGAÇÃO
+
+header.navbar.navbar-default.navbar-fixed-top
+	nav		
+		.col-xs-12.col-md-10.col-md-offset-1
+			.navbar-header.navbar-left
+				a.Voltar(href="#", title="Voltar")
+					i.fa.fa-arrow-left(aria-hidden="true")
+			.navbar-header.navbar-center
+				//- INFORMAÇÃO VEM PERSONALIZADA DE CADA PÁGINA
+				block TituloCentral				
+			.navbar-header.navbar-right
+				//- INFORMAÇÃO VEM PERSONALIZADA DE CADA PÁGINA
+				block ButtonRightTop

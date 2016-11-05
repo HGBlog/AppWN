@@ -1,0 +1,42 @@
+//- CONTEÚDO GERAL DA PÁGINA DE NOVO PERFIL
+
+.form-group
+	label.sr-only(for="txtNome")
+		| Nome Completo
+	input#txtNome.form-control(type="text", placeholder="Nome Completo")
+br
+.form-group.inputRadioAzul
+	.radio-item
+		input#RadioMasc.form-control(type="radio", name="EscSexo", value="1" checked="checked")
+		label.radio-inline(for="RadioMasc") 
+			| &nbsp;&nbsp; Masculino
+	.radio-item
+		input#RadioFem.form-control(type="radio", name="EscSexo", value="2")
+		label.radio-inline(for="RadioFem")		
+			| &nbsp;&nbsp; Feminino
+br
+.form-group
+	label.sr-only(for="txtEmail")
+		| E-mail
+	input#txtEmail.form-control(type="text", placeholder="E-mail")
+.form-group
+	label.sr-only(for="txtSenha")
+		| Senha
+	input#txtSenha.form-control(type="password", placeholder="Senha")
+.form-group
+	label.sr-only(for="txtConfSenha")
+		| Confirmar Senha
+	input#txtConfSenha.form-control(type="password", placeholder="Confirmar Senha")
+br
+br
+.form-group
+	label(for="txtCodigo")
+		| Informe o Grupo
+		small.linkInfo 
+			a.popGrupo(data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.")
+				| O que é isso?
+	input#txtCodigo.form-control.CodGrupo(type="text" value="ABC01J" disabled)
+br
+.form-group
+	button.btn.btn-lg.btn-default.btn-block.btnLoading(type="button" data-loading-text="Carregando..." autocomplete="off" onClick="location.href='QuestionarioVidaSaudavel.html'")
+		| Confirmar

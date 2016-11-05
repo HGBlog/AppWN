@@ -1,0 +1,15 @@
+//- CONTEÚDO GERAL DA PÁGINA DE NOVO PERFIL
+
+.page-header
+	h1
+		| Respondendo a esse Fórum
+	p
+		| César Bachour, Dra Ana Maria, Dr João Silva
+.form-group.heigthForum
+	label.sr-only(for="textMgsForum")
+		| Escreva sua mensagem
+	textarea#textMgsForum.form-control(rows="5", placeholder="Escreva sua mensagem")
+br
+.form-group
+	button.btn.btn-lg.btn-primary.btn-block.btnLoading(type="button" data-loading-text="Carregando..." autocomplete="off" onClick="location.href='ForumInterna.html'")
+		| Enviar Pergunta

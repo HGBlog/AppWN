@@ -1,0 +1,42 @@
+//- CONTEÚDO GERAL DA PÁGINA DE FEED NOTÍCIAS
+article.row.ContentFeed
+	.col-xs-12.col-md-offset-3.col-md-6.col-md-offset-3
+		
+		// FEED DE NOTÍCIAS COM IMAGEM
+		.thumbnail.ComImagem
+			.ImagemDestaque(style="background-image: url('assets/imagens/Feed/Exemplo-Imagem-Noticia.jpg')")
+				.backdrop
+			h3
+				| Noticias com Imagem &nbsp;&nbsp;-&nbsp;&nbsp; Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+			.caption				
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo porttitor est, sit amet facilisis lorem luctus vitae. Nam dignissim luctus orci, a convallis leo fermentum vel. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas non diam quis mi dictum viverra eget id ligula.
+			.footerThumb.row				
+				.col-xs-6
+					a(href="#" title="Clique para curtir")
+						i.fa.fa-thumbs-o-up(aria-hidden="true")
+						| &nbsp;&nbsp; Curtir
+				.col-xs-6.text-right.Curtidas
+					a(href="#" title="")
+						| 0000
+		
+		// FEED DE NOTÍCIAS SEM IMAGEM
+		.thumbnail.SemImagem			
+			h3
+				| Noticias sem Imagem &nbsp;&nbsp;-&nbsp;&nbsp;Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+			.caption				
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo porttitor est, sit amet facilisis lorem luctus vitae. Nam dignissim luctus orci, a convallis leo fermentum vel. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas non diam quis mi dictum viverra eget id ligula.
+			.footerThumb.row				
+				.col-xs-6
+					a(href="#" title="Clique para curtir")
+						i.fa.fa-thumbs-o-up(aria-hidden="true")
+						| &nbsp;&nbsp; Curtir
+				.col-xs-6.text-right.Curtidas
+					a(href="#" title="")
+						| 0000
+
+a.LinkNextFeed(href="FeedEventos.html" title="Avançar para Feed de Eventos")
+	i.fa.fa-angle-double-down(aria-hidden="true")
+	span Próxima Página
+

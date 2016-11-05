@@ -1,0 +1,543 @@
+/* CSS PARA PÁGINA TODAS AS PÁGINAS EM GERAL */
+	
+	// EMPURRA A DIV DE CONTEÚDO PARA DEPOIS DO MENU TOP
+.LimiteTopMargin
+	margin-bottom 83px
+.MarginContent
+	margin-bottom: 49px;
+.popover.fade
+	background-color CorAzul1
+	color Corbranca
+	border none
+	border-radius 0
+	padding 14px 14px 15px 14px
+	text-align center
+	FontExoRegular(normal)
+	.arrow
+		border none
+		&:after
+			border-top-color CorAzul1
+
+// ESTILO DA PÁGINA DE AMIGOS DA SAÚDE
+.bodyAmSaude
+	background-image url("../imagens/background/background-amigosSaude.jpg")
+	background-repeat no-repeat
+	background-position center
+	background-size 411px
+.PgAmigosSaude
+	margin-top -14px
+	.page-header
+		margin-top 0
+		margin-bottom 0
+		padding-bottom 18px	
+	.fixoBottom
+		position fixed
+		bottom 0
+		left 0
+		width 100%
+		padding-left 8.33333333%
+		padding-right 8.33333333%
+		margin-bottom 49px
+
+// ESTILO DA PÁGINA DE FORUM
+.ContentForum
+	.col-xs-6
+		padding 4px
+		.thumbnail
+			border-radius 0
+			padding 0
+			min-height 186px
+			margin 0
+			box-shadow none
+			border none
+			cursor pointer
+		.thumbSaude
+			background transparent url("../imagens/background/background-saude.jpg") no-repeat center
+			background-size cover
+			span
+				// NESSA FUNÇÃO SE COLOCA NOME DA IMAGEM, LARGURA, ALTURA E TAMANHO DA FONTE
+				spanIcon("CoracaoWN.png",89px,87px,25px)
+		.thumbAlimentacao
+			background transparent url("../imagens/background/background-alimentacao.jpg") no-repeat center
+			background-size cover
+			span
+				spanIcon("ComidaWN.png",143px,87px,22px)
+		.thumbEsporte
+			background transparent url("../imagens/background/background-esporte.jpg") no-repeat center
+			background-size cover
+			span
+				spanIcon("EsporteWN.png",146px,112px,16px)
+		.thumbBemEstar
+			background transparent url("../imagens/background/background-bemestar.jpg") no-repeat center
+			background-size cover
+			span
+				spanIcon("SorrisoWN.png",119px,87px,21px)
+		&:hover
+		&:active
+		&:focus
+			-ms-filter "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"			
+			-moz-opacity 0.5
+			-khtml-opacity 0.5
+			opacity 0.5
+
+// PARTE DE FEED
+.LinkNextFeed
+.LinkPreviousFeed
+	position fixed
+	font-size 58px
+	z-index 1031
+	color CorCinza2
+	bottom 36px
+	display block
+	height 59px
+	width 39px
+	left 50%
+	cursor pointer
+	margin-left calc( "-39px / 2" )
+	opacity 0.51
+	-ms-filter "progid:DXImageTransform.Microsoft.Alpha(Opacity=51)"
+	-moz-opacity 0.51
+	-khtml-opacity 0.51
+	&:hover
+	&:active
+	&:focus
+		color CorCinza2
+		opacity 1
+		-ms-filter "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+		-moz-opacity 1
+		-khtml-opacity 1
+	span
+		display none
+
+.LinkPreviousFeed
+	bottom initial
+	top 25px
+
+
+.ContentFeed
+	.col-xs-12
+		padding 5px
+		margin-top -20px
+		.thumbnail
+			padding 0
+			padding-bottom 5px
+			border-radius 0
+			box-shadow none
+			border none
+			margin-bottom 18px
+			
+		.ComImagem
+		.SemImagem
+		.Evento			
+			.ImagemDestaque
+				background #d5d5d5 url("../imagens/Feed/Fundo-Imagem.jpg") no-repeat center
+				background-size cover
+				width 100%
+				min-height 252px
+				max-height 252px
+				height 100%
+				.backdrop				
+					content ''
+					width calc( "100% - 10px" )
+					max-height 252px
+					height 100%
+					position absolute
+					background-color #000
+					opacity 0.51
+					-ms-filter "progid:DXImageTransform.Microsoft.Alpha(Opacity=51)"
+					-moz-opacity 0.51
+					-khtml-opacity 0.51
+			h3
+				position relative				
+				float left
+				display block
+				width calc( "100% - 32px" )
+				max-height 53px
+				height 100%
+				overflow hidden
+				display -webkit-box
+				-webkit-line-clamp 2
+				-webkit-box-orient vertical
+				margin-top -65px
+				margin-left 16px
+				z-index 3
+				color Corbranca
+				FontExoLight(normal)
+			.caption
+				p
+					font-size rem( 23px )
+			.footerThumb
+				margin 1px 0 -3px 0
+				line-height 38px
+				border-top 1px solid #ccc
+				a
+					&:hover
+					&:focus					
+						text-decoration none
+						outline 0
+						color CorAzulFacebook2
+				.Curtidas
+					a
+						color CorVerde2
+						&:hover
+							color CorVerde2
+				.form-group
+					margin-bottom 0
+					.checkbox-item
+						width 100%
+						label
+							font-size 16px	
+					.checkbox	
+						input	
+							& + span
+								&:after
+									border-bottom 3px solid Corbranca
+									border-right 3px solid Corbranca
+		.SemImagem
+			h3
+				margin-top 16px
+				color CorCinza2
+				height auto
+				max-height none
+				overflow initial
+				display block
+			.caption
+				p
+					margin-left 8px
+		.Evento			
+			.ImagemDestaque
+				min-height 190px
+				max-height 190px
+				.backdrop
+					max-height 190px
+				.DataEvento
+				.InfEvento
+					float left
+					span
+					h2
+						FontExoLight(normal)
+						color Corbranca
+						display block
+						position relative
+						margin 0
+						padding 0						
+						z-index 3
+				.DataEvento
+					width 98px
+					margin-left 13px
+					padding-top 10px
+					margin-right 20px
+					
+					span
+						text-transform uppercase
+					.num
+						font-size 67px
+						height 71px
+					.let
+						font-size 42px
+						margin-left 3px
+				.InfEvento
+					padding-top 28px
+					width calc( "100% - 145px" )
+					h2
+						white-space: nowrap
+						overflow hidden
+						text-overflow ellipsis
+						width 100%
+						font-size 38px
+						margin-bottom 20px
+						text-transform uppercase
+					span
+						font-size 17px
+						white-space: nowrap
+						overflow hidden
+						text-overflow ellipsis
+						width 100%
+						margin-bottom 5px
+						i 
+							width 28px
+			.caption
+				h4
+					FontExoLight(normal)
+			.footerThumb
+				.col-xs-12
+					.form-group
+						.checkbox-item
+							margin 10px 0 0 0
+		.Quiz
+			.media
+				padding 12px
+				padding-top 6px
+				padding-bottom 0
+				color CorVerde1
+				.media-left
+					padding-right 17px
+					padding-left 7px
+					i
+						font-size 71px
+				.media-body
+					padding 8px
+					.media-heading
+						color CorVerde1
+						text-transform uppercase
+						font-size 26px
+			.caption
+				padding-left 21px
+				padding-right 21px
+				p
+					font-size 18px
+			.footerThumb
+				margin 1px 0 -3px 0
+				line-height 38px
+				border-top 1px solid #ccc
+				height 56px
+				button.btn
+					margin-top 22px
+		.Anuncio
+			.caption
+				small
+					color CorCinza6
+					display block
+					margin-bottom 10px
+				p
+					font-size rem( 24px )
+			.ImagemDestaque
+				background #d5d5d5 url("../imagens/Feed/Fundo-Anuncio-Imagem.jpg") no-repeat center
+				background-size cover
+				img
+					margin-left auto
+					margin-right auto
+			.footerThumb
+				margin 8px 0 5px 0
+				padding-top 8px
+				line-height 38px
+				border-top 1px solid #ccc
+				.PaddingRight0
+					padding-right 7px
+				.PaddingLeft0
+					padding-left 7px
+				.well
+					height 44px
+					width 100%
+					border-radius 0
+					border none
+					background none
+					background-color CorAzul1
+					box-shadow none
+					padding 0
+					text-align center
+					margin-bottom 0
+					p
+						FontExoDemiBold(normal)
+						margin 0
+						padding 0
+						text-transform uppercase
+						color Corbranca
+						font-size 18px
+						line-height 44px
+
+.ContentAmigosSaude	
+	.col-xs-12
+		padding 5px
+		margin-top -20px
+		.thumbnail
+			padding 0
+			padding-bottom 5px
+			border-radius 0
+			box-shadow none
+			border none
+			margin-bottom 18px
+		
+		// DETALHES DO USUÁRIO AMIGO DA SAÚDE
+		.AmigosDetalhes
+			padding-top 39px
+			.AddAmigos
+				font-size 30px
+				position absolute
+				right 0
+				margin-right 17px
+				margin-top -31px
+				color CorCinza6
+			.active
+				color CorVerde1
+			.ImagemUsuario
+				background transparent url("../imagens/Usuarios/background-user.png") no-repeat center
+				height 190px
+				width 100%				
+				img
+					margin-left auto
+					margin-right auto
+					height 190px
+			.caption
+				text-align center
+				h2
+				.h2
+					color CorAzul1
+					text-transform uppercase
+					font-size 24px
+				p
+					font-size rem( 24px )
+					margin 0
+					a
+						color CorVerde1
+						text-decoration underline
+			.footerThumb
+				margin 8px 0 5px 0
+				padding-top 33px
+				line-height 38px
+				border-top 1px solid #ccc
+				.col-xs-12
+					padding-bottom 25px
+					padding-left 10px
+					padding-right 10px
+				.col-last
+					padding-bottom 2px
+		
+		// DETALHES DO USUÁRIO AMIGO DA SAÚDE
+		.AmigosContato
+			padding 11px
+			margin-bottom 1px
+			.AddAmigos
+				font-size 30px
+				position absolute
+				right 0
+				margin-right 28px
+				margin-top 12px
+				color CorCinza6
+			.active
+				color CorVerde1
+			.ImagemUsuario
+				background transparent url("../imagens/Usuarios/thumbs/background-user.png") no-repeat center
+				height 72px
+				width 70px
+				float left
+				border-radius 28px
+				img
+					height 70px
+					width 70px
+			.caption
+				text-align left
+				float left
+				padding 8px 0 0 21px
+				.h2
+					color CorAzul1
+					text-transform uppercase
+					font-size 22px
+					cursor pointer
+					&:hover
+						color CorVerde1
+						text-decoration none	
+				p
+					font-size 13px
+					margin 0
+					a
+						color CorVerde1
+						text-decoration underline
+						cursor pointer
+						&:hover
+							color CorAzul1
+
+		.FormPesquisar
+			padding-bottom 0
+			margin-bottom 8px
+			.form-group
+				margin-bottom 0
+				.form-control
+					height 53px
+				span
+					position absolute
+					right 0
+					margin 4px 5px 0 0
+					top 0
+					padding 0
+					line-height 46px
+					width 53px
+					background transparent
+					border none
+					color #e8e8e8
+					i
+						font-size 26px
+						margin-top 12px
+					
+
+// ESTILO DO FORUM INTERNO
+
+.headerForumInterno
+	margin-bottom 0
+	margin-top 8px
+	.form-group
+		margin-bottom 9px
+.ContentForumInterno
+	.col-xs-12
+		padding 5px
+		.thumbnail
+			padding 0
+			padding-bottom 5px
+			border-radius 0
+			box-shadow none
+			border none			
+		.ThumbForumI
+			margin-bottom 4px
+			.caption
+				.col-xs-2
+					margin-right 7px
+				.col-xs-10
+					padding-right 3px
+				.form-group
+					margin-bottom 0					
+					width 39px
+					padding-left 3px					
+					.checkbox-item
+						width 100%
+						height 42px
+						margin 0
+						padding 0
+						label
+							font-size 16px
+							margin -24px 0 0 0
+					.checkbox	
+						input	
+							& + span
+								padding 0
+								&:after
+									border-bottom 3px solid Corbranca
+									border-right 3px solid Corbranca
+				.ContPergunta
+					padding-left 22px					
+					.Pergunta
+					.Usuario
+						i
+							padding-right 15px
+							font-size rem( 24px )
+							vertical-align top
+					.Pergunta
+						a
+						i
+							color CorAzul1
+						a
+							font-size 24px
+							line-height 20px
+						i
+							padding-top 2px
+							margin-left -29px
+					.Usuario
+						a
+						i							
+							margin 0
+						a
+							font-size rem( 24px )
+						i
+							padding-top 2px
+							margin-left -29px			
+			.footerThumb
+				margin 1px 0 -3px 0
+				line-height 38px
+				border-top 1px solid #ccc
+				a
+					&:hover
+					&:focus					
+						text-decoration none
+						outline 0
+						color CorAzulFacebook2
+					.faSize
+						font-size 19px

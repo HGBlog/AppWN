@@ -1,0 +1,65 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        meta(name="Keywords", content="")
+        meta(name="Description", content="")
+        meta(name="author", content="")
+        meta(name="MSSmartTagsPreventParsing", content="true")
+        meta(http-equiv="imagetoolbar", content="no")
+        meta(name="robots", content="all")
+        meta(name="robots", content="index,follow")
+        meta(name="DC.title", content="")
+        meta(name="copyright", content="")
+        meta(http-equiv="Content-Language", content="pt-BR")
+        meta(name="target_country", content="br")
+        meta(name="country", content="Brazil")
+        meta(name="Revisit-After", content="5 Days")
+        meta(name="resource-type", content="document")
+        meta(name="classification", content="Internet")
+        meta(name="distribution", content="Global")
+        meta(name="rating", content="General")
+        meta(name="doc-class", content="Completed")
+        meta(http-equiv="cache-control", content="no-cache")
+        meta(http-equiv="Pragma", content="no-cache")
+        meta(name="theme-color", content="#ffffff")
+        
+        //- BLOCK COM O TÍTULO ESTÁ NA INDEX
+        title
+            block title
+
+        //- AQUI FICA A VARIAVEL PARA ALTERAR A CLASSE DO BODY
+        - var bodyClass
+        - var jqueryDaPag
+        
+        //- BLOCK PARA INCLUIR AS VARIAVEIS INTERNAS
+        block variables
+                    
+        //- AQUI FICA TODOS OS CSSs DO SITE
+        link(href="assets/css/lib/bootstrap.min.css", rel="stylesheet")
+        link(href="assets/css/lib/bootstrap-theme.min.css", rel="stylesheet")
+        link(href="assets/css/lib/font-awesome.min.css", rel="stylesheet")
+        link(href="assets/css/StiloPadrao.css", rel="stylesheet")
+        //- AQUI FICA O FAVICON DO SITE
+        link(rel="shortcut icon", href="assets/imagens/icon/favicon.ico", type="image/x-icon")
+    
+    //- TODOS OS INCLUDES VÃO ENTRAR AQUI
+        (ABAIXO O BODY ESTÁ COM UMA VARIAVEL PARA ALTERAÇÃO DE CLASSES)
+    body(class="#{bodyClass}")
+        block content
+
+    //- BLOCO DE MODAIS
+    // TODOS OS MODAIS
+    block modal
+        
+    //- AQUI VEM TODOS OS SCRIPTS DO SITE            
+    script(src="assets/js/lib/jquery-3.1.1.min.js") 
+    script(src="assets/js/lib/bootstrap.min.js")
+    script(src="assets/js/ScriptPadrao.js")
+    //- CHAMANDO FUNÇÃO DE PÁGINA ESPECIFICA
+    script
+        | #{jqueryDaPag}
+
+    

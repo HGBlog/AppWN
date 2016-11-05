@@ -1,0 +1,60 @@
+//- ESTRUTURA GERAL DA PÁGINA ↓
+extends Estrutura/default
+
+block variables
+	//- SE NECESSÁRIO A BODY TER CLASSE
+	- bodyClass = ""
+	//- VARIAÇÃO QUE CARREGA FUNÇÕES EM JQUERY
+	- jqueryDaPag = ""
+
+//- TÍTULO DA PÁGINA ↓
+block title
+	| Feed - Notícias e destaques sobre saúde e bem-estar
+
+//- NO "block TituloCentral" VOCÊ TEM AS SEGUINTES OPÇÕES
+	1ª TITULO DE LOGO ↓
+		.navTituloLogo
+			h1 WellNess
+	2ª TITULO ÚNICO ↓
+		.navTituloh1
+			h1 Novo Perfil
+	3ª TITULO E SUB-TITULO ↓
+		.navTitulo
+			h1 Novo Perfil
+			h2 Exemplo de Nome 
+	COLOCAR UMA DAS OPÇÕES AQUI EMBAIXO ↓
+block TituloCentral
+	.navTituloLogo
+		h1 WellNess
+//- *************************
+
+//- NO "block ButtonRightTop" VOCÊ TEM AS SEGUINTES OPÇÕES
+	1ª BOTÃO LOGO ↓
+		.navbar-brand
+			| WellNess
+	2ª LINK DE CONFIGURAÇÕES LOGIN ↓
+		a.Log(href="#", title="Informações de Login")
+			i.fa.fa-user-circle-o(aria-hidden="true")
+	COLOCAR UMA DAS OPÇÕES AQUI EMBAIXO ↓			
+block ButtonRightTop
+	a.Log(href="PerfilPreferencia.html", title="Informações de Login")
+		i.fa.fa-user-circle-o(aria-hidden="true")
+//- *************************
+
+//- ARQUIVOS DENTRO DO BODY DA PÁGINA ↓
+block content
+	form
+		div.container-fluid
+			div.row
+				//- TOPO FIXO
+				include ParteFixa/Header
+				.clearfix.LimiteTopMargin				
+				//- *************************
+
+				//- OS BLOCOS DE CONTEÚDO ENTRAM AQUI ↓			
+				//- ESSA SECTION CARREGA O CONTEÚDO PRINCIPAL DA PÁGINA ↓
+				section.col-xs-12.col-md-10.col-md-offset-1.MarginContent
+					include BlocoConteudo/PgFeedNoticias
+					.clearfix
+				//- *************************
+				include ParteFixa/Footer

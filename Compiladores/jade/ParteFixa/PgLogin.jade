@@ -1,0 +1,24 @@
+article.LoginPage
+	fieldset
+		.thumbnails
+			img(src="assets/imagens/thumbnails/logo-Wellness-Login.png")
+		
+		label.sr-only(for="TxtLogin") Usuário
+		input#inputEmail.form-control(type="text", placeholder="Usuário", required="", autofocus="" for="TxtLogin")
+
+		label.sr-only(for="inputPassword") Senha
+		input#inputPassword.form-control(type="password", placeholder="**********", required="")
+
+		button.btn.btn-lg.btn-default.btn-block.btnLoading(type="button" data-loading-text="Carregando..." autocomplete="off" onClick="location.href='QuestionarioVidaSaudavel.html'") Entrar
+
+		.container-fluid.linksSolto
+			.col-xs-6.row.aEsquerda
+				a(href="#" title="Recuperar minha senha") Esqueci minha senha
+			.col-xs-6.row.aDireita
+				a(href="NovoPerfil.html" title="Crie um novo perfil") Quero me cadastrar
+			.clearfix
+
+	div.footerLogin
+		button.btn.btn-lg.btn-facebook.btn-block.btnLoading(type="button" data-loading-text="Carregando..." autocomplete="off" onClick="location.href='QuestionarioVidaSaudavel.html'") Entrar com o Facebook
+
+	

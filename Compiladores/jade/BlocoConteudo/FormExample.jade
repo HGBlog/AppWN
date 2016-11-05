@@ -1,0 +1,26 @@
+.form-group.has-success
+  label.control-label(for="inputSuccess1") Input with success
+  input#inputSuccess1.form-control(type="text", aria-describedby="helpBlock2")
+  span#helpBlock2.help-block
+    | A block of help text that breaks onto a new line and may extend beyond one line.
+.form-group.has-warning
+  label.control-label(for="inputWarning1") Input with warning
+  input#inputWarning1.form-control(type="text")
+.form-group.has-error
+  label.control-label(for="inputError1") Input with error
+  input#inputError1.form-control(type="text")
+.has-success
+  .checkbox
+    label
+      input#checkboxSuccess(type="checkbox", value="option1")
+      | Checkbox with success
+.has-warning
+  .checkbox
+    label
+      input#checkboxWarning(type='checkbox', value="option1")
+      | Checkbox with warning
+.has-error
+  .checkbox
+    label
+      input#checkboxError(type='checkbox', value="option1")
+      | Checkbox with error

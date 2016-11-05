@@ -1,0 +1,28 @@
+//- OBS: SE FOR TRABALHAR COM GRID NAS PRINCIPAIS TAGS, PRECISA MANTER OS CLEARFIX ABAIXO. SE NÃO FOR TRABALHAR COM GRID DE INICIO NÃO TEM NECESSIDADE DE DEIXA-LAS AQUI...
+
+//- ESTRUTURA GERAL DA PÁGINA ↓
+extends Estrutura/default
+
+//- TÍTULO DA PÁGINA ↓
+block title
+	| Estrutura Pronta em Jade HTML e Stylus CSS
+
+//- ARQUIVOS DENTRO DO BODY DA PÁGINA ↓
+block content
+	div.container-fluid
+		div.row
+			include ParteFixa/Header			
+			.clearfix
+			include ParteFixa/Nav
+			.clearfix
+			//- OS BLOCOS DE CONTEÚDO ENTRAM AQUI ↓
+			include BlocoConteudo/Slider
+			.clearfix
+			//- ESSA SECTION CARREGA O CONTEÚDO PRINCIPAL DA PÁGINA ↓
+			section.row.col-xs-12.col-md-10.col-md-offset-1
+				include BlocoConteudo/MainContent
+				include BlocoConteudo/SideBar
+			//- *************************	
+			.clearfix
+			//- *************************
+			include ParteFixa/Footer
